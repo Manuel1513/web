@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tablas</title> 
+
+    <style>
+        th {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        col {
+            background-color: burlywood;
+            color: white;
+            padding: 8px;
+            text-align: center;
+        }
+        .hora-libre {
+            background-color: lightgreen;
+            text-align: center;
+        }
+
+        .horas-libres {
+            background-color: lightblue;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            margin: 10px;
+            font-size: 1.2em;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horario de Clases</h1>
+    <table border="1">
+        <caption>HORARIO DE CLASES</caption>
+
+        <colgroup>
+        <col>
+        <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>M</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td>7:00 a 8:00</td>
+                <td rowspan="2">Fundamentos de Base de Datos</td>
+                <td rowspan="2">Horas Libres</td>
+                <td rowspan="2">Horas Libres</td>
+                <td rowspan="4">Tratamiento de Imagenes</td>
+                <td rowspan="1">Hora Libre</td>
+            </tr>
+            <tr>
+                <td>8:00 a 9:00</td>
+                <td rowspan="3">Programacion web</td>
+            </tr>
+            <tr>
+                <td>9:00 a 10:00</td>
+                <td rowspan="2">Lenguaje Ensamblador</td>
+                <td>Tratamiento de Imagenes</td>
+                <td rowspan="2">Fundamentos de Base de Datos</td>
+            </tr>
+            
+            <tr>
+                <td>10:00 a 11:00</td>
+                <td rowspan="2">Metodos Numericos</td>
+            </tr>
+
+            <tr>
+                <td>11:00 a 12:00</td>
+                <td colspan="1"> Hora Libre </td>
+                <td rowspan="2">Programacion web</td>
+                <td colspan="1"> Hora Libre </td>
+                <td rowspan="3">Circuitos Electricos</td>
+            </tr>
+
+            <tr>
+                <td>12:00 a 13:00</td>
+                <td rowspan="2">Horas Libres</td>
+                <td rowspan="2">Horas Libres</td>
+                <td rowspan="2">Circuitos Electricos</td>
+            </tr>
+            <tr>
+                <td>13:00 a 14:00</td>
+                <td>Metodos Numericos</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+        Total de Materias: 6
+            </tr>
+        
+        </tfoot>
+    </table>
+</body>
+</html>
